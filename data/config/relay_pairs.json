@@ -1,0 +1,2049 @@
+{
+    "L1-2": {
+        "nodes": [
+            1,
+            2
+        ],
+        "relays": [
+            "R1",
+            "R38"
+        ],
+        "scenarios": {
+            "90": {
+                "main": {
+                    "relay": "R38",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R39",
+                        "line": "L2-3",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    },
+                    {
+                        "relay": "R55",
+                        "line": "L2-19",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            }
+        }
+    },
+    "L10-11": {
+        "nodes": [
+            10,
+            11
+        ],
+        "relays": [
+            "R10",
+            "R47"
+        ],
+        "scenarios": {
+            "90": {
+                "main": {
+                    "relay": "R47",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R48",
+                        "line": "L11-12",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            },
+            "10": {
+                "main": {
+                    "relay": "R10",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R9",
+                        "line": "L9-10",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            }
+        }
+    },
+    "L11-12": {
+        "nodes": [
+            11,
+            12
+        ],
+        "relays": [
+            "R48",
+            "R11"
+        ],
+        "scenarios": {
+            "90": {
+                "main": {
+                    "relay": "R48",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R49",
+                        "line": "L12-13",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    },
+                    {
+                        "relay": "R72",
+                        "line": "L12-22",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            },
+            "10": {
+                "main": {
+                    "relay": "R11",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R10",
+                        "line": "L10-11",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            }
+        }
+    },
+    "L12-13": {
+        "nodes": [
+            12,
+            13
+        ],
+        "relays": [
+            "R49",
+            "R12"
+        ],
+        "scenarios": {
+            "90": {
+                "main": {
+                    "relay": "R49",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R50",
+                        "line": "L13-14",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            },
+            "10": {
+                "main": {
+                    "relay": "R12",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R11",
+                        "line": "L11-12",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    },
+                    {
+                        "relay": "R72",
+                        "line": "L12-22",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            }
+        }
+    },
+    "L13-14": {
+        "nodes": [
+            13,
+            14
+        ],
+        "relays": [
+            "R50",
+            "R13"
+        ],
+        "scenarios": {
+            "90": {
+                "main": {
+                    "relay": "R50",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R51",
+                        "line": "L14-15",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            },
+            "10": {
+                "main": {
+                    "relay": "R13",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R12",
+                        "line": "L12-13",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            }
+        }
+    },
+    "L14-15": {
+        "nodes": [
+            14,
+            15
+        ],
+        "relays": [
+            "R51",
+            "R14"
+        ],
+        "scenarios": {
+            "90": {
+                "main": {
+                    "relay": "R51",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R52",
+                        "line": "L15-16",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    },
+                    {
+                        "relay": "R34",
+                        "line": "L9-15",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            },
+            "10": {
+                "main": {
+                    "relay": "R14",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R13",
+                        "line": "L13-14",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            }
+        }
+    },
+    "L15-16": {
+        "nodes": [
+            15,
+            16
+        ],
+        "relays": [
+            "R15",
+            "R52"
+        ],
+        "scenarios": {
+            "90": {
+                "main": {
+                    "relay": "R52",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R53",
+                        "line": "L16-17",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            },
+            "10": {
+                "main": {
+                    "relay": "R15",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R14",
+                        "line": "L14-15",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    },
+                    {
+                        "relay": "R34",
+                        "line": "L9-15",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            }
+        }
+    },
+    "L16-17": {
+        "nodes": [
+            16,
+            17
+        ],
+        "relays": [
+            "R16",
+            "R53"
+        ],
+        "scenarios": {
+            "90": {
+                "main": {
+                    "relay": "R53",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R54",
+                        "line": "L17-18",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            },
+            "10": {
+                "main": {
+                    "relay": "R16",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R15",
+                        "line": "L15-16",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            }
+        }
+    },
+    "L17-18": {
+        "nodes": [
+            17,
+            18
+        ],
+        "relays": [
+            "R54",
+            "R17"
+        ],
+        "scenarios": {
+            "90": {
+                "main": {
+                    "relay": "R54",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R73",
+                        "line": "L18-33",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            },
+            "10": {
+                "main": {
+                    "relay": "R17",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R16",
+                        "line": "L16-17",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            }
+        }
+    },
+    "L18-33": {
+        "nodes": [
+            18,
+            33
+        ],
+        "relays": [
+            "R73",
+            "R36"
+        ],
+        "scenarios": {
+            "90": {
+                "main": {
+                    "relay": "R73",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R32",
+                        "line": "L32-33",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            },
+            "10": {
+                "main": {
+                    "relay": "R36",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R17",
+                        "line": "L17-18",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            }
+        }
+    },
+    "L19-20": {
+        "nodes": [
+            19,
+            20
+        ],
+        "relays": [
+            "R56",
+            "R19"
+        ],
+        "scenarios": {
+            "90": {
+                "main": {
+                    "relay": "R56",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R57",
+                        "line": "L20-21",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            },
+            "10": {
+                "main": {
+                    "relay": "R19",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R18",
+                        "line": "L2-19",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            }
+        }
+    },
+    "L2-19": {
+        "nodes": [
+            2,
+            19
+        ],
+        "relays": [
+            "R18",
+            "R55"
+        ],
+        "scenarios": {
+            "90": {
+                "main": {
+                    "relay": "R55",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R56",
+                        "line": "L19-20",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            },
+            "10": {
+                "main": {
+                    "relay": "R18",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R1",
+                        "line": "L1-2",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    },
+                    {
+                        "relay": "R39",
+                        "line": "L2-3",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            }
+        }
+    },
+    "L2-3": {
+        "nodes": [
+            2,
+            3
+        ],
+        "relays": [
+            "R39",
+            "R2"
+        ],
+        "scenarios": {
+            "90": {
+                "main": {
+                    "relay": "R39",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R40",
+                        "line": "L3-4",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    },
+                    {
+                        "relay": "R59",
+                        "line": "L3-23",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            },
+            "10": {
+                "main": {
+                    "relay": "R2",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R1",
+                        "line": "L1-2",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    },
+                    {
+                        "relay": "R55",
+                        "line": "L2-19",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            }
+        }
+    },
+    "L20-21": {
+        "nodes": [
+            20,
+            21
+        ],
+        "relays": [
+            "R20",
+            "R57"
+        ],
+        "scenarios": {
+            "90": {
+                "main": {
+                    "relay": "R57",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R58",
+                        "line": "L21-22",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    },
+                    {
+                        "relay": "R33",
+                        "line": "L8-21",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            },
+            "10": {
+                "main": {
+                    "relay": "R20",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R19",
+                        "line": "L19-20",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            }
+        }
+    },
+    "L21-22": {
+        "nodes": [
+            21,
+            22
+        ],
+        "relays": [
+            "R21",
+            "R58"
+        ],
+        "scenarios": {
+            "90": {
+                "main": {
+                    "relay": "R58",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R35",
+                        "line": "L12-22",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            },
+            "10": {
+                "main": {
+                    "relay": "R21",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R20",
+                        "line": "L20-21",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    },
+                    {
+                        "relay": "R33",
+                        "line": "L8-21",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            }
+        }
+    },
+    "L8-21": {
+        "nodes": [
+            8,
+            21
+        ],
+        "relays": [
+            "R33",
+            "R70"
+        ],
+        "scenarios": {
+            "90": {
+                "main": {
+                    "relay": "R70",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R58",
+                        "line": "L21-22",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    },
+                    {
+                        "relay": "R20",
+                        "line": "L20-21",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            },
+            "10": {
+                "main": {
+                    "relay": "R33",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R7",
+                        "line": "L7-8",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    },
+                    {
+                        "relay": "R45",
+                        "line": "L8-9",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            }
+        }
+    },
+    "L12-22": {
+        "nodes": [
+            12,
+            22
+        ],
+        "relays": [
+            "R72",
+            "R35"
+        ],
+        "scenarios": {
+            "10": {
+                "main": {
+                    "relay": "R72",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R21",
+                        "line": "L21-22",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            },
+            "90": {
+                "main": {
+                    "relay": "R35",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R11",
+                        "line": "L11-12",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    },
+                    {
+                        "relay": "R49",
+                        "line": "L12-13",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            }
+        }
+    },
+    "L23-24": {
+        "nodes": [
+            23,
+            24
+        ],
+        "relays": [
+            "R23",
+            "R60"
+        ],
+        "scenarios": {
+            "90": {
+                "main": {
+                    "relay": "R60",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R61",
+                        "line": "L24-25",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            },
+            "10": {
+                "main": {
+                    "relay": "R23",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R22",
+                        "line": "L3-23",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            }
+        }
+    },
+    "L24-25": {
+        "nodes": [
+            24,
+            25
+        ],
+        "relays": [
+            "R61",
+            "R24"
+        ],
+        "scenarios": {
+            "90": {
+                "main": {
+                    "relay": "R61",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R74",
+                        "line": "L25-29",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            },
+            "10": {
+                "main": {
+                    "relay": "R24",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R23",
+                        "line": "L23-24",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            }
+        }
+    },
+    "L25-29": {
+        "nodes": [
+            25,
+            29
+        ],
+        "relays": [
+            "R74",
+            "R37"
+        ],
+        "scenarios": {
+            "90": {
+                "main": {
+                    "relay": "R74",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R28",
+                        "line": "L28-29",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    },
+                    {
+                        "relay": "R66",
+                        "line": "L29-30",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            },
+            "10": {
+                "main": {
+                    "relay": "R37",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R24",
+                        "line": "L24-25",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            }
+        }
+    },
+    "L26-27": {
+        "nodes": [
+            26,
+            27
+        ],
+        "relays": [
+            "R26",
+            "R63"
+        ],
+        "scenarios": {
+            "90": {
+                "main": {
+                    "relay": "R63",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R64",
+                        "line": "L27-28",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            },
+            "10": {
+                "main": {
+                    "relay": "R26",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R25",
+                        "line": "L6-26",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            }
+        }
+    },
+    "L27-28": {
+        "nodes": [
+            27,
+            28
+        ],
+        "relays": [
+            "R64",
+            "R27"
+        ],
+        "scenarios": {
+            "90": {
+                "main": {
+                    "relay": "R64",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R65",
+                        "line": "L28-29",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            },
+            "10": {
+                "main": {
+                    "relay": "R27",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R26",
+                        "line": "L26-27",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            }
+        }
+    },
+    "L28-29": {
+        "nodes": [
+            28,
+            29
+        ],
+        "relays": [
+            "R65",
+            "R28"
+        ],
+        "scenarios": {
+            "90": {
+                "main": {
+                    "relay": "R65",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R37",
+                        "line": "L25-29",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    },
+                    {
+                        "relay": "R66",
+                        "line": "L29-30",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            },
+            "10": {
+                "main": {
+                    "relay": "R28",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R27",
+                        "line": "L27-28",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            }
+        }
+    },
+    "L29-30": {
+        "nodes": [
+            29,
+            30
+        ],
+        "relays": [
+            "R29",
+            "R66"
+        ],
+        "scenarios": {
+            "90": {
+                "main": {
+                    "relay": "R66",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R67",
+                        "line": "L30-31",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            },
+            "10": {
+                "main": {
+                    "relay": "R29",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R28",
+                        "line": "L28-29",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    },
+                    {
+                        "relay": "R37",
+                        "line": "L25-29",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            }
+        }
+    },
+    "L3-23": {
+        "nodes": [
+            3,
+            23
+        ],
+        "relays": [
+            "R22",
+            "R59"
+        ],
+        "scenarios": {
+            "90": {
+                "main": {
+                    "relay": "R59",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R60",
+                        "line": "L23-24",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            },
+            "10": {
+                "main": {
+                    "relay": "R22",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R2",
+                        "line": "L2-3",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    },
+                    {
+                        "relay": "R40",
+                        "line": "L3-4",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            }
+        }
+    },
+    "L3-4": {
+        "nodes": [
+            3,
+            4
+        ],
+        "relays": [
+            "R3",
+            "R40"
+        ],
+        "scenarios": {
+            "90": {
+                "main": {
+                    "relay": "R40",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R41",
+                        "line": "L4-5",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            },
+            "10": {
+                "main": {
+                    "relay": "R3",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R2",
+                        "line": "L2-3",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    },
+                    {
+                        "relay": "R59",
+                        "line": "L3-23",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            }
+        }
+    },
+    "L30-31": {
+        "nodes": [
+            30,
+            31
+        ],
+        "relays": [
+            "R30",
+            "R67"
+        ],
+        "scenarios": {
+            "90": {
+                "main": {
+                    "relay": "R67",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R68",
+                        "line": "L31-32",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            },
+            "10": {
+                "main": {
+                    "relay": "R30",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R29",
+                        "line": "L29-30",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            }
+        }
+    },
+    "L31-32": {
+        "nodes": [
+            31,
+            32
+        ],
+        "relays": [
+            "R68",
+            "R31"
+        ],
+        "scenarios": {
+            "90": {
+                "main": {
+                    "relay": "R68",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R69",
+                        "line": "L32-33",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            },
+            "10": {
+                "main": {
+                    "relay": "R31",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R30",
+                        "line": "L30-31",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            }
+        }
+    },
+    "L32-33": {
+        "nodes": [
+            32,
+            33
+        ],
+        "relays": [
+            "R69",
+            "R32"
+        ],
+        "scenarios": {
+            "90": {
+                "main": {
+                    "relay": "R69",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R36",
+                        "line": "L18-33",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            },
+            "10": {
+                "main": {
+                    "relay": "R32",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R31",
+                        "line": "L31-32",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            }
+        }
+    },
+    "L4-5": {
+        "nodes": [
+            4,
+            5
+        ],
+        "relays": [
+            "R4",
+            "R41"
+        ],
+        "scenarios": {
+            "90": {
+                "main": {
+                    "relay": "R41",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R42",
+                        "line": "L5-6",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            },
+            "10": {
+                "main": {
+                    "relay": "R4",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R3",
+                        "line": "L3-4",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            }
+        }
+    },
+    "L5-6": {
+        "nodes": [
+            5,
+            6
+        ],
+        "relays": [
+            "R5",
+            "R42"
+        ],
+        "scenarios": {
+            "90": {
+                "main": {
+                    "relay": "R42",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R43",
+                        "line": "L6-7",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    },
+                    {
+                        "relay": "R62",
+                        "line": "L6-26",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            },
+            "10": {
+                "main": {
+                    "relay": "R5",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R4",
+                        "line": "L4-5",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            }
+        }
+    },
+    "L6-26": {
+        "nodes": [
+            6,
+            26
+        ],
+        "relays": [
+            "R62",
+            "R25"
+        ],
+        "scenarios": {
+            "90": {
+                "main": {
+                    "relay": "R62",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R63",
+                        "line": "L26-27",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            },
+            "10": {
+                "main": {
+                    "relay": "R25",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R5",
+                        "line": "L5-6",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    },
+                    {
+                        "relay": "R43",
+                        "line": "L6-7",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            }
+        }
+    },
+    "L6-7": {
+        "nodes": [
+            6,
+            7
+        ],
+        "relays": [
+            "R43",
+            "R6"
+        ],
+        "scenarios": {
+            "90": {
+                "main": {
+                    "relay": "R43",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R44",
+                        "line": "L7-8",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            },
+            "10": {
+                "main": {
+                    "relay": "R6",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R5",
+                        "line": "L5-6",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    },
+                    {
+                        "relay": "R62",
+                        "line": "L6-26",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            }
+        }
+    },
+    "L7-8": {
+        "nodes": [
+            7,
+            8
+        ],
+        "relays": [
+            "R7",
+            "R44"
+        ],
+        "scenarios": {
+            "90": {
+                "main": {
+                    "relay": "R44",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R70",
+                        "line": "L8-21",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    },
+                    {
+                        "relay": "R45",
+                        "line": "L8-9",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            },
+            "10": {
+                "main": {
+                    "relay": "R7",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R6",
+                        "line": "L6-7",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            }
+        }
+    },
+    "L8-9": {
+        "nodes": [
+            8,
+            9
+        ],
+        "relays": [
+            "R45",
+            "R8"
+        ],
+        "scenarios": {
+            "90": {
+                "main": {
+                    "relay": "R45",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R46",
+                        "line": "L9-10",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    },
+                    {
+                        "relay": "R71",
+                        "line": "L9-15",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            },
+            "10": {
+                "main": {
+                    "relay": "R8",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R7",
+                        "line": "L7-8",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    },
+                    {
+                        "relay": "R70",
+                        "line": "L8-21",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            }
+        }
+    },
+    "L9-10": {
+        "nodes": [
+            9,
+            10
+        ],
+        "relays": [
+            "R46",
+            "R9"
+        ],
+        "scenarios": {
+            "90": {
+                "main": {
+                    "relay": "R46",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R47",
+                        "line": "L10-11",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            },
+            "10": {
+                "main": {
+                    "relay": "R9",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R8",
+                        "line": "L8-9",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    },
+                    {
+                        "relay": "R71",
+                        "line": "L9-15",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            }
+        }
+    },
+    "L9-15": {
+        "nodes": [
+            9,
+            15
+        ],
+        "relays": [
+            "R34",
+            "R71"
+        ],
+        "scenarios": {
+            "90": {
+                "main": {
+                    "relay": "R71",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R14",
+                        "line": "L14-15",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    },
+                    {
+                        "relay": "R52",
+                        "line": "L15-16",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            },
+            "10": {
+                "main": {
+                    "relay": "R34",
+                    "pick_up": null,
+                    "Ishc": null,
+                    "TDS": null,
+                    "Time_out": null
+                },
+                "backups": [
+                    {
+                        "relay": "R8",
+                        "line": "L8-9",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    },
+                    {
+                        "relay": "R46",
+                        "line": "L9-10",
+                        "pick_up": null,
+                        "Ishc": null,
+                        "TDS": null,
+                        "Time_out": null
+                    }
+                ]
+            }
+        }
+    }
+}

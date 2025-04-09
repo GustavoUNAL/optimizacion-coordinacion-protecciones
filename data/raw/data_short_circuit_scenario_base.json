@@ -1,0 +1,2058 @@
+{
+  "_id": {
+    "$oid": "67db0345aed6dffef5979847"
+  },
+  "scenario_id": "scenario_1",
+  "timestamp": {
+    "$date": "2025-03-26T19:18:34.996Z"
+  },
+  "lines": {
+    "L1-2": {
+      "nodes": [
+        1,
+        2
+      ],
+      "relays": [
+        "R1",
+        "R38"
+      ],
+      "scenarios": {
+        "90": {
+          "main": {
+            "relay": "R38",
+            "currents": {
+              "bus1": 10.06,
+              "bus2": 0.98
+            }
+          },
+          "backups": [
+            {
+              "line": "L2-3",
+              "relay": "R39",
+              "currents": {
+                "bus1": 0.58,
+                "bus2": 0.58
+              }
+            },
+            {
+              "line": "L2-19",
+              "relay": "R55",
+              "currents": {
+                "bus1": 0.4,
+                "bus2": 0.4
+              }
+            }
+          ]
+        }
+      }
+    },
+    "L10-11": {
+      "nodes": [
+        10,
+        11
+      ],
+      "relays": [
+        "R10",
+        "R47"
+      ],
+      "scenarios": {
+        "10": {
+          "main": {
+            "relay": "R10",
+            "currents": {
+              "bus1": 1.71,
+              "bus2": 1.14
+            }
+          },
+          "backups": [
+            {
+              "line": "L9-10",
+              "relay": "R9",
+              "currents": {
+                "bus1": 1.71,
+                "bus2": 1.71
+              }
+            }
+          ]
+        },
+        "90": {
+          "main": {
+            "relay": "R47",
+            "currents": {
+              "bus1": 1.61,
+              "bus2": 1.22
+            }
+          },
+          "backups": [
+            {
+              "line": "L11-12",
+              "relay": "R48",
+              "currents": {
+                "bus1": 1.22,
+                "bus2": 1.22
+              }
+            }
+          ]
+        }
+      }
+    },
+    "L11-12": {
+      "nodes": [
+        11,
+        12
+      ],
+      "relays": [
+        "R48",
+        "R11"
+      ],
+      "scenarios": {
+        "10": {
+          "main": {
+            "relay": "R11",
+            "currents": {
+              "bus1": 1.58,
+              "bus2": 1.24
+            }
+          },
+          "backups": [
+            {
+              "line": "L10-11",
+              "relay": "R10",
+              "currents": {
+                "bus1": 1.58,
+                "bus2": 1.58
+              }
+            }
+          ]
+        },
+        "90": {
+          "main": {
+            "relay": "R48",
+            "currents": {
+              "bus1": 1.4,
+              "bus2": 1.4
+            }
+          },
+          "backups": [
+            {
+              "line": "L12-13",
+              "relay": "R49",
+              "currents": {
+                "bus1": 0.52,
+                "bus2": 0.52
+              }
+            },
+            {
+              "line": "L12-22",
+              "relay": "R72",
+              "currents": {
+                "bus1": 0.88,
+                "bus2": 0.88
+              }
+            }
+          ]
+        }
+      }
+    },
+    "L12-13": {
+      "nodes": [
+        12,
+        13
+      ],
+      "relays": [
+        "R49",
+        "R12"
+      ],
+      "scenarios": {
+        "10": {
+          "main": {
+            "relay": "R12",
+            "currents": {
+              "bus1": 2.11,
+              "bus2": 0.58
+            }
+          },
+          "backups": [
+            {
+              "line": "L11-12",
+              "relay": "R11",
+              "currents": {
+                "bus1": 1.28,
+                "bus2": 1.28
+              }
+            },
+            {
+              "line": "L12-22",
+              "relay": "R72",
+              "currents": {
+                "bus1": 0.83,
+                "bus2": 0.83
+              }
+            }
+          ]
+        },
+        "90": {
+          "main": {
+            "relay": "R49",
+            "currents": {
+              "bus1": 1.29,
+              "bus2": 0.96
+            }
+          },
+          "backups": [
+            {
+              "line": "L13-14",
+              "relay": "R50",
+              "currents": {
+                "bus1": 0.96,
+                "bus2": 0.96
+              }
+            }
+          ]
+        }
+      }
+    },
+    "L13-14": {
+      "nodes": [
+        13,
+        14
+      ],
+      "relays": [
+        "R50",
+        "R13"
+      ],
+      "scenarios": {
+        "10": {
+          "main": {
+            "relay": "R13",
+            "currents": {
+              "bus1": 1.19,
+              "bus2": 1.04
+            }
+          },
+          "backups": [
+            {
+              "line": "L12-13",
+              "relay": "R12",
+              "currents": {
+                "bus1": 1.19,
+                "bus2": 1.19
+              }
+            }
+          ]
+        },
+        "90": {
+          "main": {
+            "relay": "R50",
+            "currents": {
+              "bus1": 0.98,
+              "bus2": 1.27
+            }
+          },
+          "backups": [
+            {
+              "line": "L14-15",
+              "relay": "R51",
+              "currents": {
+                "bus1": 1.27,
+                "bus2": 1.27
+              }
+            }
+          ]
+        }
+      }
+    },
+    "L14-15": {
+      "nodes": [
+        14,
+        15
+      ],
+      "relays": [
+        "R51",
+        "R14"
+      ],
+      "scenarios": {
+        "10": {
+          "main": {
+            "relay": "R14",
+            "currents": {
+              "bus1": 0.93,
+              "bus2": 1.33
+            }
+          },
+          "backups": [
+            {
+              "line": "L13-14",
+              "relay": "R13",
+              "currents": {
+                "bus1": 0.93,
+                "bus2": 0.93
+              }
+            }
+          ]
+        },
+        "90": {
+          "main": {
+            "relay": "R51",
+            "currents": {
+              "bus1": 0.77,
+              "bus2": 1.62
+            }
+          },
+          "backups": [
+            {
+              "line": "L15-16",
+              "relay": "R52",
+              "currents": {
+                "bus1": 0.53,
+                "bus2": 0.53
+              }
+            },
+            {
+              "line": "L9-15",
+              "relay": "R34",
+              "currents": {
+                "bus1": 1.1,
+                "bus2": 1.1
+              }
+            }
+          ]
+        }
+      }
+    },
+    "L15-16": {
+      "nodes": [
+        15,
+        16
+      ],
+      "relays": [
+        "R15",
+        "R52"
+      ],
+      "scenarios": {
+        "10": {
+          "main": {
+            "relay": "R15",
+            "currents": {
+              "bus1": 1.83,
+              "bus2": 0.55
+            }
+          },
+          "backups": [
+            {
+              "line": "L14-15",
+              "relay": "R14",
+              "currents": {
+                "bus1": 0.73,
+                "bus2": 0.73
+              }
+            },
+            {
+              "line": "L9-15",
+              "relay": "R34",
+              "currents": {
+                "bus1": 1.1,
+                "bus2": 1.1
+              }
+            }
+          ]
+        },
+        "90": {
+          "main": {
+            "relay": "R52",
+            "currents": {
+              "bus1": 1.52,
+              "bus2": 0.62
+            }
+          },
+          "backups": [
+            {
+              "line": "L16-17",
+              "relay": "R53",
+              "currents": {
+                "bus1": 0.62,
+                "bus2": 0.62
+              }
+            }
+          ]
+        }
+      }
+    },
+    "L16-17": {
+      "nodes": [
+        16,
+        17
+      ],
+      "relays": [
+        "R16",
+        "R53"
+      ],
+      "scenarios": {
+        "10": {
+          "main": {
+            "relay": "R16",
+            "currents": {
+              "bus1": 1.42,
+              "bus2": 0.65
+            }
+          },
+          "backups": [
+            {
+              "line": "L15-16",
+              "relay": "R15",
+              "currents": {
+                "bus1": 1.42,
+                "bus2": 1.42
+              }
+            }
+          ]
+        },
+        "90": {
+          "main": {
+            "relay": "R53",
+            "currents": {
+              "bus1": 1.02,
+              "bus2": 0.84
+            }
+          },
+          "backups": [
+            {
+              "line": "L17-18",
+              "relay": "R54",
+              "currents": {
+                "bus1": 0.84,
+                "bus2": 0.84
+              }
+            }
+          ]
+        }
+      }
+    },
+    "L17-18": {
+      "nodes": [
+        17,
+        18
+      ],
+      "relays": [
+        "R54",
+        "R17"
+      ],
+      "scenarios": {
+        "10": {
+          "main": {
+            "relay": "R17",
+            "currents": {
+              "bus1": 0.97,
+              "bus2": 0.88
+            }
+          },
+          "backups": [
+            {
+              "line": "L16-17",
+              "relay": "R16",
+              "currents": {
+                "bus1": 0.97,
+                "bus2": 0.97
+              }
+            }
+          ]
+        },
+        "90": {
+          "main": {
+            "relay": "R54",
+            "currents": {
+              "bus1": 0.86,
+              "bus2": 0.99
+            }
+          },
+          "backups": [
+            {
+              "line": "L18-33",
+              "relay": "R73",
+              "currents": {
+                "bus1": 0.99,
+                "bus2": 0.99
+              }
+            }
+          ]
+        }
+      }
+    },
+    "L18-33": {
+      "nodes": [
+        18,
+        33
+      ],
+      "relays": [
+        "R73",
+        "R36"
+      ],
+      "scenarios": {
+        "10": {
+          "main": {
+            "relay": "R36",
+            "currents": {
+              "bus1": 0.84,
+              "bus2": 1.02
+            }
+          },
+          "backups": [
+            {
+              "line": "L17-18",
+              "relay": "R17",
+              "currents": {
+                "bus1": 0.84,
+                "bus2": 0.84
+              }
+            }
+          ]
+        },
+        "90": {
+          "main": {
+            "relay": "R73",
+            "currents": {
+              "bus1": 0.77,
+              "bus2": 1.13
+            }
+          },
+          "backups": [
+            {
+              "line": "L32-33",
+              "relay": "R32",
+              "currents": {
+                "bus1": 1.13,
+                "bus2": 1.13
+              }
+            }
+          ]
+        }
+      }
+    },
+    "L19-20": {
+      "nodes": [
+        19,
+        20
+      ],
+      "relays": [
+        "R56",
+        "R19"
+      ],
+      "scenarios": {
+        "10": {
+          "main": {
+            "relay": "R19",
+            "currents": {
+              "bus1": 6.6,
+              "bus2": 0.73
+            }
+          },
+          "backups": [
+            {
+              "line": "L2-19",
+              "relay": "R18",
+              "currents": {
+                "bus1": 6.6,
+                "bus2": 6.6
+              }
+            }
+          ]
+        },
+        "90": {
+          "main": {
+            "relay": "R56",
+            "currents": {
+              "bus1": 2.59,
+              "bus2": 1.31
+            }
+          },
+          "backups": [
+            {
+              "line": "L20-21",
+              "relay": "R57",
+              "currents": {
+                "bus1": 1.31,
+                "bus2": 1.31
+              }
+            }
+          ]
+        }
+      }
+    },
+    "L2-19": {
+      "nodes": [
+        2,
+        19
+      ],
+      "relays": [
+        "R18",
+        "R55"
+      ],
+      "scenarios": {
+        "10": {
+          "main": {
+            "relay": "R18",
+            "currents": {
+              "bus1": 10.23,
+              "bus2": 0.42
+            }
+          },
+          "backups": [
+            {
+              "line": "L1-2",
+              "relay": "R1",
+              "currents": {
+                "bus1": 9.71,
+                "bus2": 9.71
+              }
+            },
+            {
+              "line": "L2-3",
+              "relay": "R39",
+              "currents": {
+                "bus1": 0.54,
+                "bus2": 0.54
+              }
+            }
+          ]
+        },
+        "90": {
+          "main": {
+            "relay": "R55",
+            "currents": {
+              "bus1": 8.25,
+              "bus2": 0.59
+            }
+          },
+          "backups": [
+            {
+              "line": "L19-20",
+              "relay": "R56",
+              "currents": {
+                "bus1": 0.59,
+                "bus2": 0.59
+              }
+            }
+          ]
+        }
+      }
+    },
+    "L2-3": {
+      "nodes": [
+        2,
+        3
+      ],
+      "relays": [
+        "R39",
+        "R2"
+      ],
+      "scenarios": {
+        "10": {
+          "main": {
+            "relay": "R2",
+            "currents": {
+              "bus1": 9.81,
+              "bus2": 0.64
+            }
+          },
+          "backups": [
+            {
+              "line": "L1-2",
+              "relay": "R1",
+              "currents": {
+                "bus1": 9.49,
+                "bus2": 9.49
+              }
+            },
+            {
+              "line": "L2-19",
+              "relay": "R55",
+              "currents": {
+                "bus1": 0.32,
+                "bus2": 0.32
+              }
+            }
+          ]
+        },
+        "90": {
+          "main": {
+            "relay": "R39",
+            "currents": {
+              "bus1": 6.48,
+              "bus2": 1
+            }
+          },
+          "backups": [
+            {
+              "line": "L3-4",
+              "relay": "R40",
+              "currents": {
+                "bus1": 0.7,
+                "bus2": 0.7
+              }
+            },
+            {
+              "line": "L3-23",
+              "relay": "R59",
+              "currents": {
+                "bus1": 0.3,
+                "bus2": 0.3
+              }
+            }
+          ]
+        }
+      }
+    },
+    "L20-21": {
+      "nodes": [
+        20,
+        21
+      ],
+      "relays": [
+        "R20",
+        "R57"
+      ],
+      "scenarios": {
+        "10": {
+          "main": {
+            "relay": "R20",
+            "currents": {
+              "bus1": 2.34,
+              "bus2": 1.41
+            }
+          },
+          "backups": [
+            {
+              "line": "L19-20",
+              "relay": "R19",
+              "currents": {
+                "bus1": 2.34,
+                "bus2": 2.34
+              }
+            }
+          ]
+        },
+        "90": {
+          "main": {
+            "relay": "R57",
+            "currents": {
+              "bus1": 1.97,
+              "bus2": 1.61
+            }
+          },
+          "backups": [
+            {
+              "line": "L21-22",
+              "relay": "R58",
+              "currents": {
+                "bus1": 0.61,
+                "bus2": 0.61
+              }
+            },
+            {
+              "line": "L8-21",
+              "relay": "R33",
+              "currents": {
+                "bus1": 1.01,
+                "bus2": 1.01
+              }
+            }
+          ]
+        }
+      }
+    },
+    "L21-22": {
+      "nodes": [
+        21,
+        22
+      ],
+      "relays": [
+        "R21",
+        "R58"
+      ],
+      "scenarios": {
+        "10": {
+          "main": {
+            "relay": "R21",
+            "currents": {
+              "bus1": 2.8,
+              "bus2": 0.65
+            }
+          },
+          "backups": [
+            {
+              "line": "L20-21",
+              "relay": "R20",
+              "currents": {
+                "bus1": 1.84,
+                "bus2": 1.84
+              }
+            },
+            {
+              "line": "L8-21",
+              "relay": "R33",
+              "currents": {
+                "bus1": 0.96,
+                "bus2": 0.96
+              }
+            }
+          ]
+        },
+        "90": {
+          "main": {
+            "relay": "R58",
+            "currents": {
+              "bus1": 1.95,
+              "bus2": 0.86
+            }
+          },
+          "backups": [
+            {
+              "line": "L12-22",
+              "relay": "R35",
+              "currents": {
+                "bus1": 0.86,
+                "bus2": 0.86
+              }
+            }
+          ]
+        }
+      }
+    },
+    "L8-21": {
+      "nodes": [
+        8,
+        21
+      ],
+      "relays": [
+        "R33",
+        "R70"
+      ],
+      "scenarios": {
+        "10": {
+          "main": {
+            "relay": "R33",
+            "currents": {
+              "bus1": 2.6,
+              "bus2": 1.02
+            }
+          },
+          "backups": [
+            {
+              "line": "L7-8",
+              "relay": "R7",
+              "currents": {
+                "bus1": 1.45,
+                "bus2": 1.45
+              }
+            },
+            {
+              "line": "L8-9",
+              "relay": "R45",
+              "currents": {
+                "bus1": 1.16,
+                "bus2": 1.16
+              }
+            }
+          ]
+        },
+        "90": {
+          "main": {
+            "relay": "R70",
+            "currents": {
+              "bus1": 1.14,
+              "bus2": 2.26
+            }
+          },
+          "backups": [
+            {
+              "line": "L21-22",
+              "relay": "R58",
+              "currents": {
+                "bus1": 0.51,
+                "bus2": 0.51
+              }
+            },
+            {
+              "line": "L20-21",
+              "relay": "R20",
+              "currents": {
+                "bus1": 1.75,
+                "bus2": 1.75
+              }
+            }
+          ]
+        }
+      }
+    },
+    "L12-22": {
+      "nodes": [
+        12,
+        22
+      ],
+      "relays": [
+        "R72",
+        "R35"
+      ],
+      "scenarios": {
+        "10": {
+          "main": {
+            "relay": "R72",
+            "currents": {
+              "bus1": 1.75,
+              "bus2": 0.95
+            }
+          },
+          "backups": [
+            {
+              "line": "L21-22",
+              "relay": "R21",
+              "currents": {
+                "bus1": 0.96,
+                "bus2": 0.96
+              }
+            }
+          ]
+        },
+        "90": {
+          "main": {
+            "relay": "R35",
+            "currents": {
+              "bus1": 0.96,
+              "bus2": 1.72
+            }
+          },
+          "backups": [
+            {
+              "line": "L11-12",
+              "relay": "R11",
+              "currents": {
+                "bus1": 0.69,
+                "bus2": 0.69
+              }
+            },
+            {
+              "line": "L12-13",
+              "relay": "R49",
+              "currents": {
+                "bus1": 0.27,
+                "bus2": 0.27
+              }
+            }
+          ]
+        }
+      }
+    },
+    "L23-24": {
+      "nodes": [
+        23,
+        24
+      ],
+      "relays": [
+        "R23",
+        "R60"
+      ],
+      "scenarios": {
+        "10": {
+          "main": {
+            "relay": "R23",
+            "currents": {
+              "bus1": 4.13,
+              "bus2": 0.64
+            }
+          },
+          "backups": [
+            {
+              "line": "L3-23",
+              "relay": "R22",
+              "currents": {
+                "bus1": 4.13,
+                "bus2": 4.13
+              }
+            }
+          ]
+        },
+        "90": {
+          "main": {
+            "relay": "R60",
+            "currents": {
+              "bus1": 2.59,
+              "bus2": 0.93
+            }
+          },
+          "backups": [
+            {
+              "line": "L24-25",
+              "relay": "R61",
+              "currents": {
+                "bus1": 0.93,
+                "bus2": 0.93
+              }
+            }
+          ]
+        }
+      }
+    },
+    "L24-25": {
+      "nodes": [
+        24,
+        25
+      ],
+      "relays": [
+        "R61",
+        "R24"
+      ],
+      "scenarios": {
+        "10": {
+          "main": {
+            "relay": "R24",
+            "currents": {
+              "bus1": 2.36,
+              "bus2": 1
+            }
+          },
+          "backups": [
+            {
+              "line": "L23-24",
+              "relay": "R23",
+              "currents": {
+                "bus1": 2.36,
+                "bus2": 2.36
+              }
+            }
+          ]
+        },
+        "90": {
+          "main": {
+            "relay": "R61",
+            "currents": {
+              "bus1": 1.73,
+              "bus2": 1.29
+            }
+          },
+          "backups": [
+            {
+              "line": "L25-29",
+              "relay": "R74",
+              "currents": {
+                "bus1": 1.29,
+                "bus2": 1.29
+              }
+            }
+          ]
+        }
+      }
+    },
+    "L25-29": {
+      "nodes": [
+        25,
+        29
+      ],
+      "relays": [
+        "R74",
+        "R37"
+      ],
+      "scenarios": {
+        "10": {
+          "main": {
+            "relay": "R37",
+            "currents": {
+              "bus1": 1.63,
+              "bus2": 1.36
+            }
+          },
+          "backups": [
+            {
+              "line": "L24-25",
+              "relay": "R24",
+              "currents": {
+                "bus1": 1.63,
+                "bus2": 1.63
+              }
+            }
+          ]
+        },
+        "90": {
+          "main": {
+            "relay": "R74",
+            "currents": {
+              "bus1": 1.38,
+              "bus2": 1.59
+            }
+          },
+          "backups": [
+            {
+              "line": "L28-29",
+              "relay": "R28",
+              "currents": {
+                "bus1": 1.14,
+                "bus2": 1.14
+              }
+            },
+            {
+              "line": "L29-30",
+              "relay": "R66",
+              "currents": {
+                "bus1": 0.46,
+                "bus2": 0.46
+              }
+            }
+          ]
+        }
+      }
+    },
+    "L26-27": {
+      "nodes": [
+        26,
+        27
+      ],
+      "relays": [
+        "R26",
+        "R63"
+      ],
+      "scenarios": {
+        "10": {
+          "main": {
+            "relay": "R26",
+            "currents": {
+              "bus1": 3.07,
+              "bus2": 0.74
+            }
+          },
+          "backups": [
+            {
+              "line": "L6-26",
+              "relay": "R25",
+              "currents": {
+                "bus1": 3.07,
+                "bus2": 3.07
+              }
+            }
+          ]
+        },
+        "90": {
+          "main": {
+            "relay": "R63",
+            "currents": {
+              "bus1": 2.73,
+              "bus2": 0.82
+            }
+          },
+          "backups": [
+            {
+              "line": "L27-28",
+              "relay": "R64",
+              "currents": {
+                "bus1": 0.82,
+                "bus2": 0.82
+              }
+            }
+          ]
+        }
+      }
+    },
+    "L27-28": {
+      "nodes": [
+        27,
+        28
+      ],
+      "relays": [
+        "R64",
+        "R27"
+      ],
+      "scenarios": {
+        "10": {
+          "main": {
+            "relay": "R27",
+            "currents": {
+              "bus1": 2.53,
+              "bus2": 0.87
+            }
+          },
+          "backups": [
+            {
+              "line": "L26-27",
+              "relay": "R26",
+              "currents": {
+                "bus1": 2.53,
+                "bus2": 2.53
+              }
+            }
+          ]
+        },
+        "90": {
+          "main": {
+            "relay": "R64",
+            "currents": {
+              "bus1": 1.68,
+              "bus2": 1.25
+            }
+          },
+          "backups": [
+            {
+              "line": "L28-29",
+              "relay": "R65",
+              "currents": {
+                "bus1": 1.25,
+                "bus2": 1.25
+              }
+            }
+          ]
+        }
+      }
+    },
+    "L28-29": {
+      "nodes": [
+        28,
+        29
+      ],
+      "relays": [
+        "R65",
+        "R28"
+      ],
+      "scenarios": {
+        "10": {
+          "main": {
+            "relay": "R28",
+            "currents": {
+              "bus1": 1.55,
+              "bus2": 1.34
+            }
+          },
+          "backups": [
+            {
+              "line": "L27-28",
+              "relay": "R27",
+              "currents": {
+                "bus1": 1.55,
+                "bus2": 1.55
+              }
+            }
+          ]
+        },
+        "90": {
+          "main": {
+            "relay": "R65",
+            "currents": {
+              "bus1": 1.2,
+              "bus2": 1.76
+            }
+          },
+          "backups": [
+            {
+              "line": "L25-29",
+              "relay": "R37",
+              "currents": {
+                "bus1": 1.31,
+                "bus2": 1.31
+              }
+            },
+            {
+              "line": "L29-30",
+              "relay": "R66",
+              "currents": {
+                "bus1": 0.45,
+                "bus2": 0.45
+              }
+            }
+          ]
+        }
+      }
+    },
+    "L29-30": {
+      "nodes": [
+        29,
+        30
+      ],
+      "relays": [
+        "R29",
+        "R66"
+      ],
+      "scenarios": {
+        "10": {
+          "main": {
+            "relay": "R29",
+            "currents": {
+              "bus1": 2.47,
+              "bus2": 0.47
+            }
+          },
+          "backups": [
+            {
+              "line": "L28-29",
+              "relay": "R28",
+              "currents": {
+                "bus1": 1.14,
+                "bus2": 1.14
+              }
+            },
+            {
+              "line": "L25-29",
+              "relay": "R37",
+              "currents": {
+                "bus1": 1.33,
+                "bus2": 1.33
+              }
+            }
+          ]
+        },
+        "90": {
+          "main": {
+            "relay": "R66",
+            "currents": {
+              "bus1": 2.12,
+              "bus2": 0.52
+            }
+          },
+          "backups": [
+            {
+              "line": "L30-31",
+              "relay": "R67",
+              "currents": {
+                "bus1": 0.52,
+                "bus2": 0.52
+              }
+            }
+          ]
+        }
+      }
+    },
+    "L3-23": {
+      "nodes": [
+        3,
+        23
+      ],
+      "relays": [
+        "R22",
+        "R59"
+      ],
+      "scenarios": {
+        "10": {
+          "main": {
+            "relay": "R22",
+            "currents": {
+              "bus1": 6.56,
+              "bus2": 0.34
+            }
+          },
+          "backups": [
+            {
+              "line": "L2-3",
+              "relay": "R2",
+              "currents": {
+                "bus1": 5.9,
+                "bus2": 5.9
+              }
+            },
+            {
+              "line": "L3-4",
+              "relay": "R40",
+              "currents": {
+                "bus1": 0.66,
+                "bus2": 0.66
+              }
+            }
+          ]
+        },
+        "90": {
+          "main": {
+            "relay": "R59",
+            "currents": {
+              "bus1": 4.62,
+              "bus2": 0.58
+            }
+          },
+          "backups": [
+            {
+              "line": "L23-24",
+              "relay": "R60",
+              "currents": {
+                "bus1": 0.58,
+                "bus2": 0.58
+              }
+            }
+          ]
+        }
+      }
+    },
+    "L3-4": {
+      "nodes": [
+        3,
+        4
+      ],
+      "relays": [
+        "R3",
+        "R40"
+      ],
+      "scenarios": {
+        "10": {
+          "main": {
+            "relay": "R3",
+            "currents": {
+              "bus1": 6.25,
+              "bus2": 0.76
+            }
+          },
+          "backups": [
+            {
+              "line": "L2-3",
+              "relay": "R2",
+              "currents": {
+                "bus1": 5.99,
+                "bus2": 5.99
+              }
+            },
+            {
+              "line": "L3-23",
+              "relay": "R59",
+              "currents": {
+                "bus1": 0.27,
+                "bus2": 0.27
+              }
+            }
+          ]
+        },
+        "90": {
+          "main": {
+            "relay": "R40",
+            "currents": {
+              "bus1": 4.79,
+              "bus2": 1.04
+            }
+          },
+          "backups": [
+            {
+              "line": "L4-5",
+              "relay": "R41",
+              "currents": {
+                "bus1": 1.04,
+                "bus2": 1.04
+              }
+            }
+          ]
+        }
+      }
+    },
+    "L30-31": {
+      "nodes": [
+        30,
+        31
+      ],
+      "relays": [
+        "R30",
+        "R67"
+      ],
+      "scenarios": {
+        "10": {
+          "main": {
+            "relay": "R30",
+            "currents": {
+              "bus1": 2,
+              "bus2": 0.54
+            }
+          },
+          "backups": [
+            {
+              "line": "L29-30",
+              "relay": "R29",
+              "currents": {
+                "bus1": 2,
+                "bus2": 2
+              }
+            }
+          ]
+        },
+        "90": {
+          "main": {
+            "relay": "R67",
+            "currents": {
+              "bus1": 1.49,
+              "bus2": 0.64
+            }
+          },
+          "backups": [
+            {
+              "line": "L31-32",
+              "relay": "R68",
+              "currents": {
+                "bus1": 0.64,
+                "bus2": 0.64
+              }
+            }
+          ]
+        }
+      }
+    },
+    "L31-32": {
+      "nodes": [
+        31,
+        32
+      ],
+      "relays": [
+        "R68",
+        "R31"
+      ],
+      "scenarios": {
+        "10": {
+          "main": {
+            "relay": "R31",
+            "currents": {
+              "bus1": 1.43,
+              "bus2": 0.66
+            }
+          },
+          "backups": [
+            {
+              "line": "L30-31",
+              "relay": "R30",
+              "currents": {
+                "bus1": 1.43,
+                "bus2": 1.43
+              }
+            }
+          ]
+        },
+        "90": {
+          "main": {
+            "relay": "R68",
+            "currents": {
+              "bus1": 1.31,
+              "bus2": 0.7
+            }
+          },
+          "backups": [
+            {
+              "line": "L32-33",
+              "relay": "R69",
+              "currents": {
+                "bus1": 0.7,
+                "bus2": 0.7
+              }
+            }
+          ]
+        }
+      }
+    },
+    "L32-33": {
+      "nodes": [
+        32,
+        33
+      ],
+      "relays": [
+        "R69",
+        "R32"
+      ],
+      "scenarios": {
+        "10": {
+          "main": {
+            "relay": "R32",
+            "currents": {
+              "bus1": 1.28,
+              "bus2": 0.71
+            }
+          },
+          "backups": [
+            {
+              "line": "L31-32",
+              "relay": "R31",
+              "currents": {
+                "bus1": 1.28,
+                "bus2": 1.28
+              }
+            }
+          ]
+        },
+        "90": {
+          "main": {
+            "relay": "R69",
+            "currents": {
+              "bus1": 1.16,
+              "bus2": 0.76
+            }
+          },
+          "backups": [
+            {
+              "line": "L18-33",
+              "relay": "R36",
+              "currents": {
+                "bus1": 0.76,
+                "bus2": 0.76
+              }
+            }
+          ]
+        }
+      }
+    },
+    "L4-5": {
+      "nodes": [
+        4,
+        5
+      ],
+      "relays": [
+        "R4",
+        "R41"
+      ],
+      "scenarios": {
+        "10": {
+          "main": {
+            "relay": "R4",
+            "currents": {
+              "bus1": 4.51,
+              "bus2": 1.1
+            }
+          },
+          "backups": [
+            {
+              "line": "L3-4",
+              "relay": "R3",
+              "currents": {
+                "bus1": 4.51,
+                "bus2": 4.51
+              }
+            }
+          ]
+        },
+        "90": {
+          "main": {
+            "relay": "R41",
+            "currents": {
+              "bus1": 3.62,
+              "bus2": 1.32
+            }
+          },
+          "backups": [
+            {
+              "line": "L5-6",
+              "relay": "R42",
+              "currents": {
+                "bus1": 1.32,
+                "bus2": 1.32
+              }
+            }
+          ]
+        }
+      }
+    },
+    "L5-6": {
+      "nodes": [
+        5,
+        6
+      ],
+      "relays": [
+        "R5",
+        "R42"
+      ],
+      "scenarios": {
+        "10": {
+          "main": {
+            "relay": "R5",
+            "currents": {
+              "bus1": 3.31,
+              "bus2": 1.41
+            }
+          },
+          "backups": [
+            {
+              "line": "L4-5",
+              "relay": "R4",
+              "currents": {
+                "bus1": 3.31,
+                "bus2": 3.31
+              }
+            }
+          ]
+        },
+        "90": {
+          "main": {
+            "relay": "R42",
+            "currents": {
+              "bus1": 2.16,
+              "bus2": 2
+            }
+          },
+          "backups": [
+            {
+              "line": "L6-7",
+              "relay": "R43",
+              "currents": {
+                "bus1": 1.4,
+                "bus2": 1.4
+              }
+            },
+            {
+              "line": "L6-26",
+              "relay": "R62",
+              "currents": {
+                "bus1": 0.6,
+                "bus2": 0.6
+              }
+            }
+          ]
+        }
+      }
+    },
+    "L6-26": {
+      "nodes": [
+        6,
+        26
+      ],
+      "relays": [
+        "R62",
+        "R25"
+      ],
+      "scenarios": {
+        "10": {
+          "main": {
+            "relay": "R25",
+            "currents": {
+              "bus1": 3.46,
+              "bus2": 0.65
+            }
+          },
+          "backups": [
+            {
+              "line": "L5-6",
+              "relay": "R5",
+              "currents": {
+                "bus1": 2.04,
+                "bus2": 2.04
+              }
+            },
+            {
+              "line": "L6-7",
+              "relay": "R43",
+              "currents": {
+                "bus1": 1.44,
+                "bus2": 1.44
+              }
+            }
+          ]
+        },
+        "90": {
+          "main": {
+            "relay": "R62",
+            "currents": {
+              "bus1": 3.15,
+              "bus2": 0.72
+            }
+          },
+          "backups": [
+            {
+              "line": "L26-27",
+              "relay": "R63",
+              "currents": {
+                "bus1": 0.72,
+                "bus2": 0.72
+              }
+            }
+          ]
+        }
+      }
+    },
+    "L6-7": {
+      "nodes": [
+        6,
+        7
+      ],
+      "relays": [
+        "R43",
+        "R6"
+      ],
+      "scenarios": {
+        "10": {
+          "main": {
+            "relay": "R6",
+            "currents": {
+              "bus1": 2.64,
+              "bus2": 1.48
+            }
+          },
+          "backups": [
+            {
+              "line": "L5-6",
+              "relay": "R5",
+              "currents": {
+                "bus1": 2.02,
+                "bus2": 2.02
+              }
+            },
+            {
+              "line": "L6-26",
+              "relay": "R62",
+              "currents": {
+                "bus1": 0.62,
+                "bus2": 0.62
+              }
+            }
+          ]
+        },
+        "90": {
+          "main": {
+            "relay": "R43",
+            "currents": {
+              "bus1": 2.17,
+              "bus2": 1.73
+            }
+          },
+          "backups": [
+            {
+              "line": "L7-8",
+              "relay": "R44",
+              "currents": {
+                "bus1": 1.73,
+                "bus2": 1.73
+              }
+            }
+          ]
+        }
+      }
+    },
+    "L7-8": {
+      "nodes": [
+        7,
+        8
+      ],
+      "relays": [
+        "R7",
+        "R44"
+      ],
+      "scenarios": {
+        "10": {
+          "main": {
+            "relay": "R7",
+            "currents": {
+              "bus1": 2.07,
+              "bus2": 1.81
+            }
+          },
+          "backups": [
+            {
+              "line": "L6-7",
+              "relay": "R6",
+              "currents": {
+                "bus1": 2.07,
+                "bus2": 2.07
+              }
+            }
+          ]
+        },
+        "90": {
+          "main": {
+            "relay": "R44",
+            "currents": {
+              "bus1": 1.69,
+              "bus2": 2.2
+            }
+          },
+          "backups": [
+            {
+              "line": "L8-21",
+              "relay": "R70",
+              "currents": {
+                "bus1": 0.88,
+                "bus2": 0.88
+              }
+            },
+            {
+              "line": "L8-9",
+              "relay": "R45",
+              "currents": {
+                "bus1": 1.32,
+                "bus2": 1.32
+              }
+            }
+          ]
+        }
+      }
+    },
+    "L8-9": {
+      "nodes": [
+        8,
+        9
+      ],
+      "relays": [
+        "R45",
+        "R8"
+      ],
+      "scenarios": {
+        "10": {
+          "main": {
+            "relay": "R8",
+            "currents": {
+              "bus1": 2.4,
+              "bus2": 1.42
+            }
+          },
+          "backups": [
+            {
+              "line": "L7-8",
+              "relay": "R7",
+              "currents": {
+                "bus1": 1.56,
+                "bus2": 1.56
+              }
+            },
+            {
+              "line": "L8-21",
+              "relay": "R70",
+              "currents": {
+                "bus1": 0.84,
+                "bus2": 0.84
+              }
+            }
+          ]
+        },
+        "90": {
+          "main": {
+            "relay": "R45",
+            "currents": {
+              "bus1": 1.57,
+              "bus2": 2.05
+            }
+          },
+          "backups": [
+            {
+              "line": "L9-10",
+              "relay": "R46",
+              "currents": {
+                "bus1": 0.49,
+                "bus2": 0.49
+              }
+            },
+            {
+              "line": "L9-15",
+              "relay": "R71",
+              "currents": {
+                "bus1": 0.31,
+                "bus2": 0.31
+              }
+            }
+          ]
+        }
+      }
+    },
+    "L9-10": {
+      "nodes": [
+        9,
+        10
+      ],
+      "relays": [
+        "R46",
+        "R9"
+      ],
+      "scenarios": {
+        "10": {
+          "main": {
+            "relay": "R9",
+            "currents": {
+              "bus1": 2.86,
+              "bus2": 0.59
+            }
+          },
+          "backups": [
+            {
+              "line": "L8-9",
+              "relay": "R8",
+              "currents": {
+                "bus1": 1.4,
+                "bus2": 1.4
+              }
+            },
+            {
+              "line": "L9-15",
+              "relay": "R71",
+              "currents": {
+                "bus1": 0.28,
+                "bus2": 0.28
+              }
+            }
+          ]
+        },
+        "90": {
+          "main": {
+            "relay": "R46",
+            "currents": {
+              "bus1": 1.82,
+              "bus2": 1.07
+            }
+          },
+          "backups": [
+            {
+              "line": "L10-11",
+              "relay": "R47",
+              "currents": {
+                "bus1": 1.07,
+                "bus2": 1.07
+              }
+            }
+          ]
+        }
+      }
+    },
+    "L9-15": {
+      "nodes": [
+        9,
+        15
+      ],
+      "relays": [
+        "R34",
+        "R71"
+      ],
+      "scenarios": {
+        "10": {
+          "main": {
+            "relay": "R34",
+            "currents": {
+              "bus1": 2.8,
+              "bus2": 0.44
+            }
+          },
+          "backups": [
+            {
+              "line": "L8-9",
+              "relay": "R8",
+              "currents": {
+                "bus1": 1.31,
+                "bus2": 1.31
+              }
+            },
+            {
+              "line": "L9-10",
+              "relay": "R46",
+              "currents": {
+                "bus1": 0.39,
+                "bus2": 0.39
+              }
+            }
+          ]
+        },
+        "90": {
+          "main": {
+            "relay": "R71",
+            "currents": {
+              "bus1": 1.23,
+              "bus2": 1.17
+            }
+          },
+          "backups": [
+            {
+              "line": "L14-15",
+              "relay": "R14",
+              "currents": {
+                "bus1": 0.67,
+                "bus2": 0.67
+              }
+            },
+            {
+              "line": "L15-16",
+              "relay": "R52",
+              "currents": {
+                "bus1": 0.5,
+                "bus2": 0.5
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}
