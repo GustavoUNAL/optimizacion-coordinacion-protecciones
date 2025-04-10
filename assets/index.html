@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimización de la Coordinación de Relés de Protección</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- MathJax para ecuaciones -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <!-- Highlight.js para resaltado de código -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <style>
+        body {
+            padding: 20px;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+        }
+        h1, h2, h3 {
+            color: #343a40;
+            margin-bottom: 25px;
+        }
+        .container {
+            max-width: 900px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .equation {
+            margin: 15px 0;
+            font-size: 1.1em;
+        }
+        p, li {
+            color: #495057;
+        }
+        pre {
+            background-color: #f1f3f5;
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+        hr {
+            margin: 30px 0;
+            border-color: #dee2e6;
+        }
+        .alert-info {
+            background-color: #e7f1ff;
+            border-color: #d3e3ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Optimización de la Coordinación de Relés de Protección en Sistemas Eléctricos</h1>
+        <p class="lead">
+            Este documento describe un método  para optimizar la coordinación de relés de protección en sistemas eléctricos de potencia, basado en la norma <strong>IEC 60255-151</strong> para curvas de tiempo inverso estándar (SI). El objetivo es ajustar  los parámetros clave de los relés —el <em>Time Dial Setting</em> (TDS) y la corriente de pickup (<em>I_pi</em>)— para minimizar el <strong>Tiempo de Margen Total (TMT)</strong> negativo, garantizando una coordinación eficiente y segura entre relés principales y de respaldo. A continuación, exploramos en detalle el modelo matemático, las restricciones, las variables de optimización y el algoritmo implementado, con fragmentos de código que ilustran su funcionamiento.
+        </p>
+        <hr>
+
+        <h2>Función Objetivo</h2>
+        <p>
+            La función objetivo (<em>OF</em>) es el núcleo del algoritmo de optimización. Está diseñada para equilibrar tres componentes esenciales:
+        </p>
+        <ul>
+            <li><strong>Tiempo total de operación</strong> de los relés principales, para asegurar respuestas rápidas ante fallas.</li>
+            <li><strong>Penalización por márgenes de tiempo (MT) negativos</strong>, para corregir descoordinaciones entre relés principales y de respaldo.</li>
+            <li><strong>Diferencia en corrientes de pickup</strong>, para mantener ajustes coherentes entre relés vecinos.</li>
+        </ul>
+        <p>Matemáticamente, se define como:</p>
+        <div class="equation text-center">
+            $$ OF = T_{total} + w_k \sum_{i \in P_{neg}} (MT_i)^2 + w_{pickup} \sum_{i \in P} |I_{pi,main,i} - I_{pi,backup,i}| $$
+        </div>
+        <p>Donde:</p>
+        <ul>
+            <li>
+                $$ T_{total} = \sum_{i \in P} t_{main,i} $$: Suma de los tiempos de operación de los relés principales para todos los pares de coordinación (\(P\)).
+            </li>
+            <li>
+                $$ w_k \sum_{i \in P_{neg}} (MT_i)^2 $$: Penalización cuadrática por MT negativos (\(MT_i = \Delta t_i - CTI\)), con \(w_k = 1.0\). El término \(MT_i^2\) prioriza la corrección de descoordinaciones severas.
+            </li>
+            <li>
+                $$ w_{pickup} \sum_{i \in P} |I_{pi,main,i} - I_{pi,backup,i}| $$: Penalización por diferencias en pickup, con \(w_{pickup} = 0.5\), para evitar ajustes desbalanceados.
+            </li>
+            <li>
+                \( t_{main,i} \): Tiempo de operación del relé principal, calculado con la ecuación SI:
+                $$ t_{main,i} = TDS_{main,i} \cdot \frac{K}{M_{main,i}^N - 1}, \quad M_{main,i} = \frac{I_{shc,main,i}}{I_{pi,main,i}} $$
+                Donde \(K = 0.14\), \(N = 0.02\), \(I_{shc,main,i}\) es la corriente de cortocircuito máxima, e \(I_{pi,main,i}\) es la corriente de pickup.
+            </li>
+            <li>
+                $$ \Delta t_i = t_{backup,i} - t_{main,i} $$: Diferencia de tiempo entre el relé de respaldo y el principal.
+            </li>
+            <li>
+                \( CTI = 0.2 \, \text{s} \): Intervalo de tiempo de coordinación típico, asegurando un margen de seguridad.
+            </li>
+        </ul>
+        <p>
+            El objetivo es minimizar \(OF\), reduciendo el <strong>TMT</strong> (\(TMT = \sum_{i \in P_{neg}} MT_i\)) hasta un valor objetivo de \(-0.005 \, \text{s}\), lo que indica una coordinación casi óptima con un margen mínimo de descoordinación aceptable.
+        </p>
+        <div class="alert alert-info">
+            <strong>Código:</strong> A continuación, se muestra cómo se calcula el tiempo de operación en el script Python:
+            <pre><code class="language-python">
+def calculate_operation_time(I_shc: float, I_pi: float, TDS: float) -> float:
+    if I_pi <= 0 or I_shc <= 0 or TDS < MIN_TDS or TDS > MAX_TDS:
+        logger.debug(f"Valores inválidos: I_shc={I_shc}, I_pi={I_pi}, TDS={TDS}. Retornando {MAX_TIME}")
+        return MAX_TIME
+    M = I_shc / I_pi
+    if M <= 1.001:  # Margen para evitar valores cercanos a 1
+        return MAX_TIME
+    try:
+        time = TDS * (K / (M**N - 1))
+        return min(time, MAX_TIME) if time > 0 else MAX_TIME
+    except ZeroDivisionError:
+        return MAX_TIME
+            </code></pre>
+            Esta función implementa la ecuación SI, con validaciones para evitar resultados no físicos.
+        </div>
+        <hr>
+
+        <h2>Restricciones</h2>
+        <p>
+            El problema de optimización está limitado por restricciones que reflejan las capacidades físicas y operativas de los relés:
+        </p>
+        <ol>
+            <li>
+                <strong>Límites de TDS</strong>:
+                $$ TDS_{min} \leq TDS_{j} \leq TDS_{max}, \quad \forall j \in R $$
+                Donde \(TDS_{min} = 0.05\), \(TDS_{max} = 10.0\), y \(R\) es el conjunto de todos los relés. Esto asegura que el TDS esté dentro de rangos prácticos.
+            </li>
+            <li>
+                <strong>Límites de Corriente de Pickup</strong>:
+                $$ I_{pi,min} \leq I_{pi,j} \leq 0.9 \cdot I_{shc,j}, \quad \forall j \in R $$
+                Donde \(I_{pi,min} = 0.01 \, \text{A}\) y \(I_{shc,j}\) es la corriente de cortocircuito máxima del relé \(j\). El límite superior (90% de \(I_{shc,j}\)) garantiza que el relé opere ante fallas.
+            </li>
+            <li>
+                <strong>Tiempo de Operación Máximo</strong>:
+                $$ t_{j} \leq T_{max}, \quad \forall j \in R $$
+                Donde \(T_{max} = 10.0 \, \text{s}\), evitando tiempos excesivamente largos que serían imprácticos.
+            </li>
+            <li>
+                <strong>Condición de Coordinación</strong>:
+                $$ \Delta t_i \geq 0, \quad \forall i \in P $$
+                Aunque no es una restricción estricta, el algoritmo ajusta iterativamente los parámetros para cumplirla, minimizando descoordinaciones.
+            </li>
+        </ol>
+        <div class="alert alert-info">
+            <strong>Código:</strong> Ejemplo de cómo se limitan los valores en el algoritmo:
+            <pre><code class="language-python">
+tds_backup = min(MAX_TDS, max(MIN_TDS, tds_backup))
+pickup_backup = min(I_shc_backup * 0.9, max(MIN_PICKUP, pickup_backup))
+            </code></pre>
+            Estas líneas aseguran que TDS y pickup permanezcan dentro de los rangos definidos.
+        </div>
+        <hr>
+
+        <h2>Variables de Optimización</h2>
+        <p>
+            Las variables que el algoritmo ajusta son:
+        </p>
+        <ol>
+            <li>
+                <strong>Time Dial Setting (TDS)</strong>: Factor continuo en el rango \([0.05, 10.0]\), que controla la velocidad de respuesta del relé ante una falla.
+            </li>
+            <li>
+                <strong>Corriente de Pickup (I_pi)</strong>: Corriente continua en el rango \([0.01, 0.9 \cdot I_{shc,j}]\), que define el umbral mínimo para que el relé detecte una falla.
+            </li>
+        </ol>
+        <p>
+            Estas variables se ajustan para cada relé en el sistema, considerando las interacciones entre pares de relés principales y de respaldo.
+        </p>
+        <hr>
+
+        <h2>Algoritmo de Optimización</h2>
+        <p>
+            El algoritmo implementado es un enfoque iterativo que ajusta TDS y pickup hasta cumplir los criterios de convergencia. Funciona de la siguiente manera:
+        </p>
+        <ol>
+            <li><strong>Inicialización</strong>: Se cargan los valores iniciales de TDS y pickup desde los datos base.</li>
+            <li><strong>Iteración</strong>: Hasta un máximo de 100 iteraciones, se calculan tiempos de operación, MT y la función objetivo.</li>
+            <li><strong>Ajuste</strong>: Para pares con MT negativo, se incrementan TDS y pickup del relé de respaldo y se reducen los del principal, con ajustes más agresivos si la descoordinación es severa.</li>
+            <li><strong>Convergencia</strong>: El proceso termina si el TMT está cerca de \(-0.005 \, \text{s}\) y todos los MT son aceptables (\(\geq -0.01\)).</li>
+        </ol>
+        <div class="alert alert-info">
+            <strong>Código:</strong> Fragmento principal del algoritmo iterativo:
+            <pre><code class="language-python">
+for iteration in range(100):
+    total_time = 0
+    tmt = 0
+    optimized_pairs = []
+    for pair in pairs_info:
+        main_time = calculate_operation_time(I_shc_main, pickup_main, tds_main)
+        backup_time = calculate_operation_time(I_shc_backup, pickup_backup, tds_backup)
+        delta_t = backup_time - main_time
+        mt = delta_t - CTI
+        optimized_pairs.append({
+            "main_time": main_time,
+            "backup_time": backup_time,
+            "delta_t": delta_t,
+            "mt": mt,
+            "main_relay": main_relay,
+            "backup_relay": backup_relay
+        })
+        total_time += main_time
+        if mt < 0:
+            tmt += mt
+
+    of = total_time + w_k * sum((pair["mt"]**2 if pair["mt"] < 0 else 0) for pair in optimized_pairs) + w_pickup * pickup_diff
+
+    if abs(tmt - target_tmt) < 0.01 and all(pair["mt"] >= -0.01 for pair in optimized_pairs):
+        logger.info(f"Convergencia alcanzada en iteración {iteration}")
+        break
+
+    for pair in optimized_pairs:
+        if pair["mt"] < 0:
+            if pair["mt"] < -CTI:
+                tds_backup *= 1.1
+                pickup_backup *= 1.05
+                tds_main *= 0.9
+                pickup_main *= 0.95
+            else:
+                tds_backup += 0.05
+                pickup_backup *= 1.02
+                tds_main -= 0.02
+                pickup_main *= 0.98
+            </code></pre>
+            Este código calcula \(OF\), verifica la convergencia y ajusta parámetros iterativamente.
+        </div>
+        <hr>
+
+        <h2>Resultados y Visualización</h2>
+        <p>
+            El algoritmo genera valores optimizados de TDS y pickup, que se guardan en un archivo JSON y se comparan con los valores base en dashboards interactivos. Estos dashboards muestran curvas de tiempo inverso, tablas de coordinación y gráficos de evolución de parámetros, permitiendo una validación visual y numérica de la optimización.
+        </p>
+        <p>
+            La implementación en Python asegura precisión y flexibilidad, con un diseño modular que facilita su integración en sistemas de análisis de protección más amplios.
+        </p>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

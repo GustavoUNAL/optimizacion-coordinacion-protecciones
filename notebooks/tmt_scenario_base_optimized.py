@@ -4,7 +4,7 @@ import plotly.graph_objects as go
 import dash
 from dash import dcc, html, Input, Output, dash_table
 from dash.dependencies import ALL
-
+import os
 # Constantes según la norma IEC 60255-151 para curva SI
 K = 0.14
 N = 0.02
@@ -12,9 +12,20 @@ CTI = 0.2  # Intervalo de tiempo de coordinación típico (en segundos)
 MAX_TIME = 10.0  # Tiempo máximo razonable para evitar infinitos
 
 # Rutas de los archivos
-RELAY_DATA_PATH = "/Users/gustavo/Documents/Projects/TESIS_UNAL/optimizacion-coordinacion-protecciones/data/raw/data_relays_scenario_base_optimized.json"
-RELAY_PAIRS_PATH = "/Users/gustavo/Documents/Projects/TESIS_UNAL/optimizacion-coordinacion-protecciones/data/config/relay_pairs.json"
-SHORT_CIRCUIT_PATH = "/Users/gustavo/Documents/Projects/TESIS_UNAL/optimizacion-coordinacion-protecciones/data/raw/data_short_circuit_scenario_base.json"
+# Directorio base del script (notebooks/)
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Rutas relativas al directorio raíz del proyecto
+RELAY_DATA_PATH = os.path.join(BASE_DIR, "..", "data", "processed", "data_relays_scenario_base_optimized.json")
+RELAY_PAIRS_PATH = os.path.join(BASE_DIR, "..", "data", "config", "relay_pairs.json")
+SHORT_CIRCUIT_PATH = os.path.join(BASE_DIR, "..", "data", "raw", "data_short_circuit_scenario_base.json")
+
+# RELAY_DATA_PATH = "/Users/gustavo/Documents/Projects/TESIS_UNAL/optimizacion-coordinacion-protecciones/data/processed/data_relays_scenario_base_optimized.json"
+# RELAY_PAIRS_PATH = "/Users/gustavo/Documents/Projects/TESIS_UNAL/optimizacion-coordinacion-protecciones/data/config/relay_pairs.json"
+# SHORT_CIRCUIT_PATH = "/Users/gustavo/Documents/Projects/TESIS_UNAL/optimizacion-coordinacion-protecciones/data/raw/data_short_circuit_scenario_base.json"
+
+
+
 
 # Cargar los datos desde los archivos
 def load_json_file(file_path):
