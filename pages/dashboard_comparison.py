@@ -5,7 +5,7 @@ from dash import dcc, html, dash_table
 
 # Rutas relativas
 RELAY_DATA_BASE_PATH = "data/raw/data_relays_scenario_base.json"
-RELAY_DATA_OPT_PATH = "data/raw/data_relays_scenario_base_optimized.json"
+RELAY_DATA_OPT_PATH = "data/processed/data_relays_scenario_base_optimized.json"
 RELAY_PAIRS_PATH = "data/config/relay_pairs.json"
 SHORT_CIRCUIT_PATH = "data/raw/data_short_circuit_scenario_base.json"
 

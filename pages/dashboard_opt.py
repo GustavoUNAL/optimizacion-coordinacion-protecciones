@@ -10,7 +10,7 @@ CTI = 0.2
 MAX_TIME = 10.0
 
 # Rutas relativas dentro del contenedor
-RELAY_DATA_PATH = "data/raw/data_relays_scenario_base_optimized.json"
+RELAY_DATA_PATH = "data/processed/data_relays_scenario_base_optimized.json"
 RELAY_PAIRS_PATH = "data/config/relay_pairs.json"
 SHORT_CIRCUIT_PATH = "data/raw/data_short_circuit_scenario_base.json"
 RELAY_DATA_BASE_PATH = "data/raw/data_relays_scenario_base.json"

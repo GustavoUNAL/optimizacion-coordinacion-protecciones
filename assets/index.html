@@ -57,7 +57,7 @@
     <div class="container">
         <h1 class="text-center">Optimización de la Coordinación de Relés de Protección en Sistemas Eléctricos</h1>
         <p class="lead">
-            Este documento describe un método  para optimizar la coordinación de relés de protección en sistemas eléctricos de potencia, basado en la norma <strong>IEC 60255-151</strong> para curvas de tiempo inverso estándar (SI). El objetivo es ajustar  los parámetros clave de los relés —el <em>Time Dial Setting</em> (TDS) y la corriente de pickup (<em>I_pi</em>)— para minimizar el <strong>Tiempo de Margen Total (TMT)</strong> negativo, garantizando una coordinación eficiente y segura entre relés principales y de respaldo. A continuación, exploramos en detalle el modelo matemático, las restricciones, las variables de optimización y el algoritmo implementado, con fragmentos de código que ilustran su funcionamiento.
+            Este documento describe un método para optimizar la coordinación de relés de protección en sistemas eléctricos de potencia, basado en la norma <strong>IEC 60255-151</strong> para curvas de tiempo inverso estándar (SI). El objetivo es ajustar los parámetros clave de los relés —el <em>Time Dial Setting</em> (TDS) y la corriente de pickup (<em>I_pi</em>)— para minimizar el <strong>Tiempo de Margen Total (TMT)</strong> negativo, garantizando una coordinación eficiente y segura entre relés principales y de respaldo. A continuación, exploramos en detalle el modelo matemático, las restricciones, las variables de optimización y el algoritmo implementado, con fragmentos de código que ilustran su funcionamiento.
         </p>
         <hr>
 
@@ -237,6 +237,16 @@ for iteration in range(100):
         <p>
             La implementación en Python asegura precisión y flexibilidad, con un diseño modular que facilita su integración en sistemas de análisis de protección más amplios.
         </p>
+        <hr>
+        <footer class="text-center">
+            <p>
+                Elaborado por <strong>Gustavo Arteaga</strong><br>
+                email: <a href="mailto:garteagae@unal.edu.co">garteagae@unal.edu.co</a><br>
+                <a href="https://www.linkedin.com/in/gustavo-arteaga" target="_blank">
+                    Gustavo Arteaga - Sistemas energéticos
+                </a>
+            </p>
+        </footer>
     </div>
 
     <!-- Bootstrap JS -->
