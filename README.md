@@ -1,6 +1,4 @@
-Aquí tienes el contenido del archivo `README.md` listo para copiar y pegar directamente:
 
-```
 # Optimización de la Coordinación de Relés de Protección en Sistemas Eléctricos
 
 Este repositorio contiene una implementación en Python para optimizar la coordinación de relés de protección en sistemas eléctricos de potencia, basada en la norma **IEC 60255-151** para curvas de tiempo inverso estándar (SI). El objetivo es ajustar los parámetros clave de los relés —**Time Dial Setting (TDS)** y **corriente de pickup (I_pi)**— para minimizar el **Tiempo de Margen Total (TMT)** negativo, garantizando una coordinación eficiente y segura entre relés principales y de respaldo.
@@ -127,6 +125,7 @@ pip install -r requirements.txt
 ## Licencia
 
 Este proyecto está bajo la licencia [MIT](LICENSE).
-```
 
-Solo copia este texto y pégalo en tu archivo `README.md`. ¡Listo!
+---
+
+Este `README.md` es funcional, profesional y adecuado para un repositorio en GitHub, manteniendo la esencia técnica del documento original. Si necesitas ajustes adicionales, como más detalles o una estructura diferente, házmelo saber.
